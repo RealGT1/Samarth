@@ -56,7 +56,7 @@
 </div>
 
 <div class="paper" style="border-radius: 50px;background-image: url(https://images.pexels.com/photos/4197560/pexels-photo-4197560.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
-<p class="p1">You are Cute and Amazing !!!<span style="color: red !important;">❤️</span> </p>
+<p class="p1">You're Cute and Amazing !!!<span style="color: red !important;">❤️</span> </p>
   <p class="p1"></p>
 </div>
 
@@ -74,6 +74,19 @@
   <span class="word">YOU</span>
 </h1>
 
+<script>
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    // Load mobile.js for mobile screens
+    var script = document.createElement("script");
+    script.src = "./mobile.js";
+    document.body.appendChild(script);
+  } else {
+    // Load script.js for desktop screens
+    var script = document.createElement("script");
+    script.src = "./script.js";
+    document.body.appendChild(script);
+  }
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 
@@ -82,7 +95,7 @@
 
 
 <!-- partial -->
-  <script  src="./mobile.js"></script>
+  
 
 </body>
 </html>
